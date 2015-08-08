@@ -1,0 +1,27 @@
+{
+  "name": "weather-app",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.html",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "jade": "./node_modules/.bin/jade ./*.jade ./**/*.jade",
+    "sass": "./node_modules/.bin/node-sass main.scss main.css",
+    "build": "npm run jade; npm run sass",
+    "server": "./node_modules/.bin/hs -o",
+    "start": "npm run build; npm run server"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/GregDick/weather-app"
+  },
+  "author": "Greg Dick",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/GregDick/weather-app/issues"
+  },
+  "homepage": "https://github.com/GregDick/weather-app",
+  "devDependencies": {
+    "http-server": "^0.8.0"
+  }
+}
